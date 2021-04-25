@@ -60,11 +60,66 @@ const deleteEstudiante = function(request, response){
         response.status(200).send('se ha eliminado el estudiante')
     })
 }
+
+//crear carrera
+const createCarrera = function(request, response){
+    const {Carrera} = request.body
+
+    pool.query('INSERT INTO Carrera(Carrera) VALUES ($1)',
+    [Carrera],
+    function(error, results){
+        if(error){
+            throw error
+        }
+    response.status(201).send('La carrera ha sido agregado y se le asignó el ID: ${result.insertId}')
+    })
+}
+ //getCarreras
+ const getCarreras = function(request, response){
+    pool.query('SELECT * FROM carrera ORDER BY idCarrera ASC',
+    function(error, results){
+        if(error){
+            throw error
+        }
+        response.status(200).json(results.rows)
+    })
+}
+
+//updateCarrera
+const updateCarrera = function(request,response){
+    const idCarrera = parseInt(request.params.idCarrera)
+    const  {Carrera} = request.body
+    pool.query('UPDATE carrera set Carrera =$2 where idCarrera = $1',
+    [idCarrera,Carrera],
+    function(error, results){
+        if (error){
+           throw error 
+        }
+        response.status(200).send('carrera actualizada')
+    })
+}
+
+const deleteCarrera = function(request, response){
+    const idCarrera = parseInt(request.params.idCarrera)
+    pool.query('DELETE FROM carrera WHERE idCarrera = $1',
+    [idCarrera],
+    function(error, results){
+        if(error){
+            throw error
+        }
+        response.status(200).send('se ha eliminado la carrera')
+    })
+}
 module.exports = {
     getEstudiantes,
     createEstudiante,
     updateEstudiante,
     deleteEstudiante,
+    //carrera
+    createCarrera,
+    getCarreras,
+    updateCarrera,
+    deleteCarrera,
 }
 
 /*

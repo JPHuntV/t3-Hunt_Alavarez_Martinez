@@ -23,6 +23,12 @@ app.get('/estudiantes',db.getEstudiantes)
 app.post('/estudiante',db.createEstudiante)
 app.put('/estudiante/:idEstudiante',db.updateEstudiante)
 app.delete('/estudiante/:idEstudiante',db.deleteEstudiante)
+//carrera
+app.post('/carrera',db.createCarrera)
+app.get('/carreras',db.getCarreras)
+app.put('/carrera/:idCarrera',db.updateCarrera)
+app.delete('/carrera/:idCarrera',db.deleteCarrera)
+
 
 app.listen(port, function(){ 
   console.log('la app está corriendo en el puerto ${port}')
