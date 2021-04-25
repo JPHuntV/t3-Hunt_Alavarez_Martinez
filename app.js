@@ -28,7 +28,11 @@ app.post('/carrera',db.createCarrera)
 app.get('/carreras',db.getCarreras)
 app.put('/carrera/:idCarrera',db.updateCarrera)
 app.delete('/carrera/:idCarrera',db.deleteCarrera)
-
+//citas
+app.post('/cita',db.createCita)
+app.get('/citas',db.getCitas)
+app.put('/cita/:idCita',db.updateCita)
+app.delete('/cita/:idCita',db.deleteCita)
 
 app.listen(port, function(){ 
   console.log('la app está corriendo en el puerto ${port}')

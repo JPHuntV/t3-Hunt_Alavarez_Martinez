@@ -20,7 +20,7 @@ CREATE TABLE CitaMatricula
     idEstudiante SERIAL,
     idCarrera SERIAL,
     Cita TIMESTAMP NOT NULL,
-    TiempoSesión TIME NOT NULL,
+    TiempoSesion TIME NOT NULL,
     CONSTRAINT fk_estudiante FOREIGN KEY(idEstudiante)
     REFERENCES Estudiante(idEstudiante),
     CONSTRAINT fk_carrera FOREIGN KEY(idCarrera)
