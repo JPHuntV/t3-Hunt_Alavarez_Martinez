@@ -1,0 +1,262 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--ignore-scripts',
+1 verbose cli   '@types/express',
+1 verbose cli   '--save-dev',
+1 verbose cli   '--user-agent=typesInstaller/4.2.3' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ '@types/express', null ]
+6 verbose cache add name=undefined spec="@types/express" args=["@types/express",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '@types/express',
+7 verbose parsed url   path: '@types/express',
+7 verbose parsed url   href: '@types/express' }
+8 verbose cache add name="" spec="types/express" args=["","types/express"]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'types/express',
+9 verbose parsed url   path: 'types/express',
+9 verbose parsed url   href: 'types/express' }
+10 silly lockFile 7fcb3d81-types-express types/express
+11 verbose lock types/express /home/jean/.npm/7fcb3d81-types-express.lock
+12 info maybeGithub Attempting types/express from git://github.com/types/express
+13 silly lockFile 103ba17c-git-github-com-types-express git://github.com/types/express
+14 verbose lock git://github.com/types/express /home/jean/.npm/103ba17c-git-github-com-types-express.lock
+15 verbose addRemoteGit [ 'git://github.com/types/express', 'master' ]
+16 verbose git remote.origin.url git://github.com/types/express
+17 verbose git fetch -a origin (git://github.com/types/express)
+18 verbose git rev-list -n1 master 7670cf1cbce96b3159e3ff04a253926b34111220
+19 verbose resolved git url git://github.com/types/express#7670cf1cbce96b3159e3ff04a253926b34111220
+20 verbose tar unpack /tmp/npm-57425-hJcRgBeH/1619332356495-0.8854540642350912/tmp.tgz
+21 silly lockFile aed5de8f--8854540642350912-tmp-tgz-unpack tar:///tmp/npm-57425-hJcRgBeH/1619332356495-0.8854540642350912/tmp.tgz-unpack
+22 verbose lock tar:///tmp/npm-57425-hJcRgBeH/1619332356495-0.8854540642350912/tmp.tgz-unpack /home/jean/.npm/aed5de8f--8854540642350912-tmp-tgz-unpack.lock
+23 silly lockFile 8769ce58-56495-0-8854540642350912-tmp-tgz tar:///tmp/npm-57425-hJcRgBeH/1619332356495-0.8854540642350912/tmp.tgz
+24 verbose lock tar:///tmp/npm-57425-hJcRgBeH/1619332356495-0.8854540642350912/tmp.tgz /home/jean/.npm/8769ce58-56495-0-8854540642350912-tmp-tgz.lock
+25 silly gunzTarPerm modes [ '775', '664' ]
+26 silly gunzTarPerm extractEntry
+27 silly gunzTarPerm extractEntry .editorconfig
+28 silly gunzTarPerm extractEntry .gitignore
+29 silly gunzTarPerm extractEntry .travis.yml
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry index.d.ts
+32 silly gunzTarPerm extractEntry lib/
+33 silly gunzTarPerm extractEntry lib/application.d.ts
+34 silly gunzTarPerm extractEntry lib/express.d.ts
+35 silly gunzTarPerm extractEntry lib/request.d.ts
+36 silly gunzTarPerm extractEntry lib/response.d.ts
+37 silly gunzTarPerm extractEntry lib/router/
+38 silly gunzTarPerm extractEntry lib/router/index.d.ts
+39 silly gunzTarPerm extractEntry lib/router/layer.d.ts
+40 silly gunzTarPerm extractEntry lib/router/route.d.ts
+41 silly gunzTarPerm extractEntry package.json
+42 silly gunzTarPerm extractEntry test/
+43 silly gunzTarPerm extractEntry test/app.ts
+44 silly gunzTarPerm extractEntry test/middleware.ts
+45 silly gunzTarPerm extractEntry test/params.ts
+46 silly gunzTarPerm extractEntry test/router-options.ts
+47 silly gunzTarPerm extractEntry test/router.ts
+48 silly gunzTarPerm extractEntry test/static.ts
+49 silly gunzTarPerm extractEntry test/tsconfig.json
+50 silly gunzTarPerm extractEntry tsconfig.json
+51 silly gunzTarPerm extractEntry tslint.json
+52 silly gunzTarPerm extractEntry typings.json
+53 silly lockFile aed5de8f--8854540642350912-tmp-tgz-unpack tar:///tmp/npm-57425-hJcRgBeH/1619332356495-0.8854540642350912/tmp.tgz-unpack
+54 silly lockFile aed5de8f--8854540642350912-tmp-tgz-unpack tar:///tmp/npm-57425-hJcRgBeH/1619332356495-0.8854540642350912/tmp.tgz-unpack
+55 silly lockFile 8769ce58-56495-0-8854540642350912-tmp-tgz tar:///tmp/npm-57425-hJcRgBeH/1619332356495-0.8854540642350912/tmp.tgz
+56 silly lockFile 8769ce58-56495-0-8854540642350912-tmp-tgz tar:///tmp/npm-57425-hJcRgBeH/1619332356495-0.8854540642350912/tmp.tgz
+57 silly lockFile 103ba17c-git-github-com-types-express git://github.com/types/express
+58 silly lockFile 103ba17c-git-github-com-types-express git://github.com/types/express
+59 silly lockFile 7fcb3d81-types-express types/express
+60 silly lockFile 7fcb3d81-types-express types/express
+61 silly resolved [ { name: '@types/express',
+61 silly resolved     version: '4.14.0',
+61 silly resolved     private: true,
+61 silly resolved     description: 'TypeScript Typings for express',
+61 silly resolved     typings: 'index.d.ts',
+61 silly resolved     scripts:
+61 silly resolved      { build: 'typings bundle -o test/bundle.d.ts',
+61 silly resolved        test: 'tsc -p test',
+61 silly resolved        lint: 'tslint -c tslint.json index.d.ts lib/**/*.d.ts test/**/*.ts' },
+61 silly resolved     author: { name: 'Felix Becker', email: 'felix.b@outlook.com' },
+61 silly resolved     license: 'ISC',
+61 silly resolved     devDependencies: { tslint: '^5.4.3', typescript: '^2.3.4', typings: '^2.1.1' },
+61 silly resolved     peerDependencies: { '@types/node': '*' },
+61 silly resolved     dependencies:
+61 silly resolved      { '@types/serve-static': 'github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0',
+61 silly resolved        'path-to-regexp': 'github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4' },
+61 silly resolved     readme: '# Typed express\n\n[![Greenkeeper badge](https://badges.greenkeeper.io/types/npm-express.svg)](https://greenkeeper.io/)\n[![Build Status](https://travis-ci.org/types/npm-express.svg?branch=master)](https://travis-ci.org/types/npm-express)\n\nTypescript Typings for [express](https://github.com/expressjs/express).\n\n## Installation\n\n    typings install --save express\n\nor\n\n    npm install --save-dev types/npm-express#<commit hash>\n\n## Usage\n\n```ts\nimport express = require(\'express\');\n\nconst app = express();\n\napp.get(\'/\', (req: express.Request, res: express.Response) => {\n  res.send(\'Hello World\');\n});\n\napp.listen(3000);\n```\n\n[More examples](./test)\n\n## Contributing\nYou can run the tests by running `npm run build` and then `npm run test`.\n\n\n---------------------------------------\n\n_Based on the typings by [Boris Yankov](https://github.com/borisyankov) on [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)_\n\n',
+61 silly resolved     readmeFilename: 'README.md',
+61 silly resolved     _id: '@types/express@4.14.0',
+61 silly resolved     _shasum: '45b54793226d8cf376a3eee0f10b4c024a0c1c31',
+61 silly resolved     _resolved: 'git://github.com/types/express#7670cf1cbce96b3159e3ff04a253926b34111220',
+61 silly resolved     _from: 'git://github.com/types/express',
+61 silly resolved     _fromGithub: true } ]
+62 info install @types/express@4.14.0 into /home/jean/Desktop/t3-Hunt_Alavarez_Martinez
+63 info installOne @types/express@4.14.0
+64 verbose node_modules/@types/express unbuild
+65 verbose tar unpack /home/jean/.npm/@types/express/4.14.0/package.tgz
+66 silly lockFile f03b8c6d-tinez-node-modules-types-express tar:///home/jean/Desktop/t3-Hunt_Alavarez_Martinez/node_modules/@types/express
+67 verbose lock tar:///home/jean/Desktop/t3-Hunt_Alavarez_Martinez/node_modules/@types/express /home/jean/.npm/f03b8c6d-tinez-node-modules-types-express.lock
+68 silly lockFile fb2d1b20-types-express-4-14-0-package-tgz tar:///home/jean/.npm/@types/express/4.14.0/package.tgz
+69 verbose lock tar:///home/jean/.npm/@types/express/4.14.0/package.tgz /home/jean/.npm/fb2d1b20-types-express-4-14-0-package-tgz.lock
+70 silly gunzTarPerm modes [ '775', '664' ]
+71 silly gunzTarPerm extractEntry
+72 silly gunzTarPerm extractEntry .editorconfig
+73 silly gunzTarPerm extractEntry .gitignore
+74 silly gunzTarPerm extractEntry .travis.yml
+75 silly gunzTarPerm extractEntry README.md
+76 silly gunzTarPerm extractEntry index.d.ts
+77 silly gunzTarPerm extractEntry lib/
+78 silly gunzTarPerm extractEntry lib/application.d.ts
+79 silly gunzTarPerm extractEntry lib/express.d.ts
+80 silly gunzTarPerm extractEntry lib/request.d.ts
+81 silly gunzTarPerm extractEntry lib/response.d.ts
+82 silly gunzTarPerm extractEntry lib/router/
+83 silly gunzTarPerm extractEntry lib/router/index.d.ts
+84 silly gunzTarPerm extractEntry lib/router/layer.d.ts
+85 silly gunzTarPerm extractEntry lib/router/route.d.ts
+86 silly gunzTarPerm extractEntry package.json
+87 silly gunzTarPerm extractEntry test/
+88 silly gunzTarPerm extractEntry test/app.ts
+89 silly gunzTarPerm extractEntry test/middleware.ts
+90 silly gunzTarPerm extractEntry test/params.ts
+91 silly gunzTarPerm extractEntry test/router-options.ts
+92 silly gunzTarPerm extractEntry test/router.ts
+93 silly gunzTarPerm extractEntry test/static.ts
+94 silly gunzTarPerm extractEntry test/tsconfig.json
+95 silly gunzTarPerm extractEntry tsconfig.json
+96 silly gunzTarPerm extractEntry tslint.json
+97 silly gunzTarPerm extractEntry typings.json
+98 silly lockFile f03b8c6d-tinez-node-modules-types-express tar:///home/jean/Desktop/t3-Hunt_Alavarez_Martinez/node_modules/@types/express
+99 silly lockFile f03b8c6d-tinez-node-modules-types-express tar:///home/jean/Desktop/t3-Hunt_Alavarez_Martinez/node_modules/@types/express
+100 silly lockFile fb2d1b20-types-express-4-14-0-package-tgz tar:///home/jean/.npm/@types/express/4.14.0/package.tgz
+101 silly lockFile fb2d1b20-types-express-4-14-0-package-tgz tar:///home/jean/.npm/@types/express/4.14.0/package.tgz
+102 info preinstall @types/express@4.14.0
+103 verbose readDependencies using package.json deps
+104 verbose readDependencies using package.json deps
+105 verbose cache add [ '@types/serve-static@github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0',
+105 verbose cache add   null ]
+106 verbose cache add name=undefined spec="@types/serve-static@github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0" args=["@types/serve-static@github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0",null]
+107 verbose parsed url { protocol: null,
+107 verbose parsed url   slashes: null,
+107 verbose parsed url   auth: null,
+107 verbose parsed url   host: null,
+107 verbose parsed url   port: null,
+107 verbose parsed url   hostname: null,
+107 verbose parsed url   hash: '#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0',
+107 verbose parsed url   search: null,
+107 verbose parsed url   query: null,
+107 verbose parsed url   pathname: '@types/serve-static@github:types/npm-serve-static',
+107 verbose parsed url   path: '@types/serve-static@github:types/npm-serve-static',
+107 verbose parsed url   href: '@types/serve-static@github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0' }
+108 verbose cache add [ 'path-to-regexp@github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4',
+108 verbose cache add   null ]
+109 verbose cache add name=undefined spec="path-to-regexp@github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4" args=["path-to-regexp@github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4",null]
+110 verbose parsed url { protocol: null,
+110 verbose parsed url   slashes: null,
+110 verbose parsed url   auth: null,
+110 verbose parsed url   host: null,
+110 verbose parsed url   port: null,
+110 verbose parsed url   hostname: null,
+110 verbose parsed url   hash: '#ec285ed3500aed455df59e3b8b07f473412918a4',
+110 verbose parsed url   search: null,
+110 verbose parsed url   query: null,
+110 verbose parsed url   pathname: 'path-to-regexp@github:pillarjs/path-to-regexp',
+110 verbose parsed url   path: 'path-to-regexp@github:pillarjs/path-to-regexp',
+110 verbose parsed url   href: 'path-to-regexp@github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4' }
+111 verbose cache add name="" spec="types/serve-static@github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0" args=["","types/serve-static@github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0"]
+112 verbose parsed url { protocol: null,
+112 verbose parsed url   slashes: null,
+112 verbose parsed url   auth: null,
+112 verbose parsed url   host: null,
+112 verbose parsed url   port: null,
+112 verbose parsed url   hostname: null,
+112 verbose parsed url   hash: '#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0',
+112 verbose parsed url   search: null,
+112 verbose parsed url   query: null,
+112 verbose parsed url   pathname: 'types/serve-static@github:types/npm-serve-static',
+112 verbose parsed url   path: 'types/serve-static@github:types/npm-serve-static',
+112 verbose parsed url   href: 'types/serve-static@github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0' }
+113 verbose cache add name="path-to-regexp" spec="github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4" args=["path-to-regexp","github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4"]
+114 verbose parsed url { protocol: 'github:',
+114 verbose parsed url   slashes: null,
+114 verbose parsed url   auth: null,
+114 verbose parsed url   host: 'pillarjs',
+114 verbose parsed url   port: null,
+114 verbose parsed url   hostname: 'pillarjs',
+114 verbose parsed url   hash: '#ec285ed3500aed455df59e3b8b07f473412918a4',
+114 verbose parsed url   search: null,
+114 verbose parsed url   query: null,
+114 verbose parsed url   pathname: '/path-to-regexp',
+114 verbose parsed url   path: '/path-to-regexp',
+114 verbose parsed url   href: 'github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4' }
+115 verbose addNamed [ 'path-to-regexp',
+115 verbose addNamed   'github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4' ]
+116 verbose addNamed [ null, null ]
+117 silly lockFile 83a8b378-500aed455df59e3b8b07f473412918a4 path-to-regexp@github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4
+118 verbose lock path-to-regexp@github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4 /home/jean/.npm/83a8b378-500aed455df59e3b8b07f473412918a4.lock
+119 verbose cache add name="types/serve-static" spec="github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0" args=["types/serve-static","github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0"]
+120 verbose parsed url { protocol: 'github:',
+120 verbose parsed url   slashes: null,
+120 verbose parsed url   auth: null,
+120 verbose parsed url   host: 'types',
+120 verbose parsed url   port: null,
+120 verbose parsed url   hostname: 'types',
+120 verbose parsed url   hash: '#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0',
+120 verbose parsed url   search: null,
+120 verbose parsed url   query: null,
+120 verbose parsed url   pathname: '/npm-serve-static',
+120 verbose parsed url   path: '/npm-serve-static',
+120 verbose parsed url   href: 'github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0' }
+121 verbose addNamed [ 'types/serve-static',
+121 verbose addNamed   'github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0' ]
+122 verbose addNamed [ null, null ]
+123 silly lockFile f405df79-c8b96a37f6c534cb1dadb48f5329e4e0 types/serve-static@github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0
+124 verbose lock types/serve-static@github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0 /home/jean/.npm/f405df79-c8b96a37f6c534cb1dadb48f5329e4e0.lock
+125 info addNameTag [ 'path-to-regexp',
+125 info addNameTag   'github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4' ]
+126 info addNameTag [ 'types/serve-static',
+126 info addNameTag   'github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0' ]
+127 verbose registry.get https://registry.npmjs.org/path-to-regexp not expired, no request
+128 info maybeGithub Attempting github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4 from git://github.com/github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4
+129 silly lockFile e219c296-m-github-pillarjs-path-to-regexp git://github.com/github:pillarjs/path-to-regexp
+130 verbose lock git://github.com/github:pillarjs/path-to-regexp /home/jean/.npm/e219c296-m-github-pillarjs-path-to-regexp.lock
+131 verbose registry.get https://registry.npmjs.org/types/serve-static not expired, no request
+132 error TypeError: Object.keys called on non-object
+132 error     at Function.keys (native)
+132 error     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:240:24)
+132 error     at /usr/local/lib/node_modules/npm/lib/cache/add-named.js:84:10
+132 error     at RegClient.get_ (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:130:14)
+132 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:49:12)
+132 error     at evalmachine.<anonymous>:271:14
+132 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
+132 error     at Object.oncomplete (evalmachine.<anonymous>:107:15)
+133 error If you need help, you may report this *entire* log,
+133 error including the npm and node versions, at:
+133 error     <http://github.com/npm/npm/issues>
+134 error System Linux 5.8.0-50-generic
+135 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--ignore-scripts" "@types/express" "--save-dev" "--user-agent=typesInstaller/4.2.3"
+136 error cwd /home/jean/Desktop/t3-Hunt_Alavarez_Martinez
+137 error node -v v0.10.32
+138 error npm -v 1.4.28
+139 error type called_on_non_object
+140 verbose exit [ 1, true ]
