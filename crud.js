@@ -20,7 +20,7 @@ const createEstudiante = function(request, response){
         if(error){
             throw error
         }
-    response.status(201).send('El estudiante ha sido agregado y se le asignó el ID: {result.insertId}')
+    response.status(201).send('El estudiante ha sido agregado')
     })
 }
 
@@ -71,7 +71,7 @@ const createCarrera = function(request, response){
         if(error){
             throw error
         }
-    response.status(201).send('La carrera ha sido agregado y se le asignó el ID: ${result.insertId}')
+    response.status(201).send('La carrera ha sido agregada')
     })
 }
  //getCarreras
@@ -127,7 +127,7 @@ const createCita = function(request, response){
             }
             console.log(error.message)
         }else{
-            response.status(201).send('La cita ha sido agregado y se le asignó el ID: ${result.insertId}')
+            response.status(201).send('La cita ha sido agregado')
         }
     })
 }
@@ -195,13 +195,10 @@ module.exports = {
     getCarreras,
     updateCarrera,
     deleteCarrera,
+    //citas
     createCita,
     getCitas,
     updateCita,
     deleteCita,
     getInfo,
 }
-
-/*
-CURL --data "Nombre='a'&Apellidos='b'&fechaNacimiento='04-10-2000'&Telefono=12345678&correoElectronico='correo@gmail.com'" http://localhost:4000/estudiante
-*/
