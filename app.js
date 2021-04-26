@@ -33,7 +33,8 @@ app.post('/cita',db.createCita)
 app.get('/citas',db.getCitas)
 app.put('/cita/:idCita',db.updateCita)
 app.delete('/cita/:idCita',db.deleteCita)
-
+//info
+app.get('/info/:idCita',db.getInfo)
 app.listen(port, function(){ 
   console.log('la app está corriendo en el puerto ${port}')
 })

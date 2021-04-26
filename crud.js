@@ -167,6 +167,24 @@ const deleteCita = function(request, response){
         response.status(200).send('se ha eliminado la cita de matricula')
     })
 }
+
+const getInfo = function(request, response){
+    const idCita = parseInt(request.params.idCita)
+    pool.query("SELECT e.idEstudiante, concat(e.Nombre, concat(' ',e.Apellidos)) as nombre,e.correoElectronico,"+
+                "c.Carrera, m.Cita, m.TiempoSesion "+
+                "from CitaMatricula m "+
+                "inner join carrera c on m.idCarrera = c.idCarrera "+
+                "inner join estudiante e on e.idEstudiante = m.idEstudiante "+
+                "where idCita = $1 "+
+                "order by idCita ASC",
+    [idCita],
+    function(error, results){
+        if(error){
+            throw error
+        }
+        response.status(200).json(results.rows)
+    })
+}
 module.exports = {
     getEstudiantes,
     createEstudiante,
@@ -181,6 +199,7 @@ module.exports = {
     getCitas,
     updateCita,
     deleteCita,
+    getInfo,
 }
 
 /*
